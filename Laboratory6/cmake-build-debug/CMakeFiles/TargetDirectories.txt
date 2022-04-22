@@ -1,0 +1,3 @@
+D:/OOP_labs/laboratory6-tontonel/Laboratory6/cmake-build-debug/CMakeFiles/Laboratory6.dir
+D:/OOP_labs/laboratory6-tontonel/Laboratory6/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/OOP_labs/laboratory6-tontonel/Laboratory6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

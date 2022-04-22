@@ -1,0 +1,7 @@
+# ninja log v5
+1	752	6702893966087615	CMakeFiles/Laboratory6.dir/FilteringCriteria.cpp.obj	60330a51c9dfb4bf
+58	759	6702893966157499	CMakeFiles/Laboratory6.dir/OfferTest.cpp.obj	4d6f381392cc98bf
+46	761	6702893966237526	CMakeFiles/Laboratory6.dir/FilteringTest.cpp.obj	ac28ff26c2799c4f
+49	776	6702893966247522	CMakeFiles/Laboratory6.dir/DynamicArrayTest.cpp.obj	b28c95c08eb69581
+42	1964	6702893978325875	CMakeFiles/Laboratory6.dir/main.cpp.obj	df138d92e820a8b3
+54	1985	6702893978525769	CMakeFiles/Laboratory6.dir/DynamicArray.cpp.obj	6e9a8aca30b6ac3b
