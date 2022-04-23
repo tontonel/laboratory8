@@ -10,10 +10,9 @@ void Menu::displayMenu() const
     std::cout << "A|a add an offer\nS|s show all offers\nP|p filter offers by price\nT|t filter offers by type\nB|b filter offers by type and price\nQ|q quit\n";
 }
 
-void Menu::displayOffers(DynamicArray& offers) const
+void Menu::displayOffers(DynamicArray<Offer>& offers) const
 {
-    for (int i = 0; i < offers.getLength(); i++)
-        cout << offers << "\n";
+    std::cout << offers;
 }
 
 const float Menu::getPrice() const

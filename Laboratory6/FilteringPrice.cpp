@@ -5,9 +5,9 @@ FilteringPrice::FilteringPrice(int price):FilteringCriteria()
     this->price = price;
 }
 
-DynamicArray FilteringPrice::filter(DynamicArray& data)
+DynamicArray<Offer> FilteringPrice::filter(DynamicArray<Offer>& data)
 {
-    DynamicArray new_data = DynamicArray();
+    DynamicArray<Offer> new_data;
     for (int i = 0; i < data.getLength(); i++) {
         if (data.get(i).getPrice() < this->price)
             new_data.append(data.get(i));

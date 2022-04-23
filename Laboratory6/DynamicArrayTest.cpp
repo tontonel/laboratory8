@@ -15,7 +15,7 @@ void DynamicArrayTest::runAllTests()
 
 void DynamicArrayTest::testGetLength()
 {
-	DynamicArray arr = DynamicArray();
+	DynamicArray<Offer> arr;
 	for (int i = 0; i < 10; i++)
 		arr.append(Offer());
 	assert(arr.getLength() == 10);
@@ -27,7 +27,7 @@ void DynamicArrayTest::testGetLength()
 }
 void DynamicArrayTest::testGetCapacity()
 {
-	DynamicArray arr;
+	DynamicArray<Offer> arr;
 	assert(arr.getCapacity() == 100);
 	for (int i = 0; i < 102; i++)
 		arr.append(Offer());
@@ -36,7 +36,7 @@ void DynamicArrayTest::testGetCapacity()
 
 void DynamicArrayTest::testAppend()
 {
-	DynamicArray arr;
+	DynamicArray<Offer> arr;
 	Offer offer = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", circuit);
 	arr.append(offer);
 	assert(arr.popBack() == offer);
@@ -47,7 +47,7 @@ void DynamicArrayTest::testAppend()
 
 void DynamicArrayTest::testPopBack()
 {
-	DynamicArray arr;
+	DynamicArray<Offer> arr;
 	for (int i = 0; i < 10; i++)
 		arr.append(Offer());
 	arr.popBack();
@@ -60,12 +60,12 @@ void DynamicArrayTest::testPopBack()
 
 void DynamicArrayTest::testRemove()
 {
-	DynamicArray arr;
+	DynamicArray<Offer> arr;
 	for (int i = 1; i <= 10; i++)
 		arr.append(Offer());
 	arr.remove(4);
 	assert(arr.getLength() == 9);
-	DynamicArray arr1;
+	DynamicArray<Offer> arr1;
 	Offer offer1 = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", circuit);
 	Offer offer2 = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", circuit);
 	arr1.append(offer1);
@@ -79,7 +79,7 @@ void DynamicArrayTest::testGet()
 	Offer offer1 = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", circuit);
 	Offer offer2 = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", circuit);
 	Offer offer3 = Offer("123", "Monday", "London", 130, "11/03/2021", "12/12/2021", city_break);
-	DynamicArray arr;
+	DynamicArray<Offer> arr;
 	arr.append(offer1);
 	arr.append(offer2);
 	arr.append(offer3);

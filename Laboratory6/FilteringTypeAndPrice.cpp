@@ -6,9 +6,9 @@ FilteringTypeAndPrice::FilteringTypeAndPrice(typeOffer type, int price) : Filter
 	this->price = price;
 }
 
-DynamicArray FilteringTypeAndPrice::filter(DynamicArray& data)
+DynamicArray<Offer> FilteringTypeAndPrice::filter(DynamicArray<Offer>& data)
 {
-	DynamicArray new_data;
+	DynamicArray<Offer> new_data;
 	new_data = FilteringType(this->type).filter(data);
 	new_data = FilteringPrice(this->price).filter(new_data);
 	return new_data;

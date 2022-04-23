@@ -8,6 +8,6 @@ private: typeOffer type;
 	
 public:
 	FilteringType(typeOffer type);
-	DynamicArray filter(DynamicArray& data) override;
+	DynamicArray<Offer> filter(DynamicArray<Offer>& data) override;
 };
 

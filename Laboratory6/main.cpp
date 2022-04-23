@@ -21,7 +21,7 @@ int main() {
 	DynamicArrayTest::runAllTests();
 
 	
-	DynamicArray offers;
+	DynamicArray<Offer> offers;
 	Offer offer;
 	Menu menu;
 

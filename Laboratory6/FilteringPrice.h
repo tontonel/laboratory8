@@ -9,6 +9,6 @@ private:
 	int price;
 public:
 	FilteringPrice(int price);
-	DynamicArray filter(DynamicArray& data) override;
+	DynamicArray<Offer> filter(DynamicArray<Offer>& data) override;
 };
 

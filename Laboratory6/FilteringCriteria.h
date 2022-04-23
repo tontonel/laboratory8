@@ -4,6 +4,6 @@
 // you can add all your filtering classes in this module
 class FilteringCriteria
 {
-	virtual DynamicArray filter(DynamicArray& data) = 0;
+	virtual DynamicArray<Offer> filter(DynamicArray<Offer>& data) = 0;
 };
 

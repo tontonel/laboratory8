@@ -10,6 +10,6 @@ private:
 	int price;
 public:
 	FilteringTypeAndPrice(typeOffer type, int price);
-	DynamicArray filter(DynamicArray& data);
+	DynamicArray<Offer> filter(DynamicArray<Offer>& data);
 };
 
